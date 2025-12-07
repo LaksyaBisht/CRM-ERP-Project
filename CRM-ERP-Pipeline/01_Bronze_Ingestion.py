@@ -69,7 +69,7 @@ def erp_loc_a101_raw():
         .option("cloudFiles.inferSchema", "true")
         .option("header", "true")
         .option("cloudFiles.schemaLocation", f"{BASE_PATH}/erp/_checkpoints/loc_a101_raw")
-        .option("pathGlobFilter", "*loc_a101.csv")
+        .option("pathGlobFilter", "*LOC_A101.csv")
         .load(f"{BASE_PATH}/erp/")
     )
 
@@ -85,7 +85,7 @@ def erp_cust_az12_raw():
         .option("cloudFiles.inferSchema", "true")
         .option("header", "true")
         .option("cloudFiles.schemaLocation", f"{BASE_PATH}/erp/_checkpoints/cust_az12_raw")
-        .option("pathGlobFilter", "*cust_az12.csv")
+        .option("pathGlobFilter", "*CUST_AZ12.csv")
         .load(f"{BASE_PATH}/erp/")
     )
 
@@ -101,6 +101,6 @@ def erp_px_cat_g1v2_raw():
         .option("cloudFiles.inferSchema", "true")
         .option("header", "true")
         .option("cloudFiles.schemaLocation", f"{BASE_PATH}/erp/_checkpoints/px_cat_g1v2_raw")
-        .option("pathGlobFilter", "*px_cat_g1v2.csv")
+        .option("pathGlobFilter", "*PX_CAT_G1V2.csv")
         .load(f"{BASE_PATH}/erp/")
     )
